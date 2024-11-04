@@ -1,0 +1,20 @@
+[app]
+name = "DeltaWitsApp"
+version = "1.0"
+description = "DeltaWits Application with Dark Theme Configuration"
+
+[theme]
+primary_color = "#1E1E1E"          # Dark background
+secondary_color = "#2E2E2E"        # Slightly lighter dark shade for contrast
+text_color = "#FFFFFF"             # White text for readability on dark background
+accent_color = "#4A90E2"           # Accent color for buttons, links, or highlights
+error_color = "#FF6B6B"            # Error messages in a bright red
+base = "dark"
+
+[logo]
+black = "logo/DELTA-WITS-LOGO-BLACK.png"
+white = "logo/DELTA-WITS-LOGO-WHITE.png"
+
+[database]
+path = "users.db"
+type = "sqlite"
