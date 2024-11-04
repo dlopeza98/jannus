@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # Ignore models folder
-.streamlit/secrets.toml
+/home/dalopeza/jannus/.streamlit/secrets.toml
 
 # Distribution / packaging
 .Python
