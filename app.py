@@ -151,37 +151,34 @@ def login():
         st.markdown(
             f"""
             <style>
-                /* Responsive styling for mobile */
-                @media (max-width: 600px) {{
-                    .title-logo-container h1 {{
-                        font-size: 1.5em; /* Smaller font size for mobile */
-                        text-align: center; /* Center-align title */
-                    }}
-                    .title-logo-container img {{
-                        width: 150px; /* Reduce logo size */
-                        margin-top: 10px;
-                    }}
-                    .title-logo-container {{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                    }}
-                }}
-
-                /* Default styling for larger screens */
+                /* Responsive styling */
                 .title-logo-container {{
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: center;
                     max-width: 700px;
                     margin: auto;
                     padding-top: 18px;
                 }}
+                
+                /* Adjust font and image size on smaller screens */
+                @media (max-width: 600px) {{
+                    .title-logo-container h1 {{
+                        font-size: 1.5em; /* Smaller font size for mobile */
+                        margin-right: 10px; /* Add spacing between title and logo */
+                    }}
+                    .title-logo-container img {{
+                        width: 120px; /* Reduce logo size on mobile */
+                    }}
+                }}
+
+                /* Default styling for larger screens */
                 .title-logo-container h1 {{
                     margin: 0;
                     font-size: 2.5em;
                     font-weight: bold;
                     color: white;
+                    margin-right: 20px; /* Space between title and logo */
                 }}
                 .title-logo-container img {{
                     width: 200px;
@@ -252,37 +249,34 @@ def main():
         st.markdown(
             f"""
             <style>
-                /* Responsive styling for mobile */
-                @media (max-width: 600px) {{
-                    .title-logo-container h1 {{
-                        font-size: 1.5em;
-                        text-align: center;
-                    }}
-                    .title-logo-container img {{
-                        width: 150px;
-                        margin-top: 10px;
-                    }}
-                    .title-logo-container {{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                    }}
-                }}
-
-                /* Default styling for larger screens */
+                /* Responsive styling to keep the title and logo on the same line */
                 .title-logo-container {{
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: center;
                     max-width: 700px;
                     margin: auto;
                     padding-top: 10px;
                 }}
+
+                /* Adjust font and image size on smaller screens */
+                @media (max-width: 600px) {{
+                    .title-logo-container h1 {{
+                        font-size: 1.5em;
+                        margin-right: 10px;
+                    }}
+                    .title-logo-container img {{
+                        width: 120px;
+                    }}
+                }}
+
+                /* Default styling for larger screens */
                 .title-logo-container h1 {{
                     margin: 0;
                     font-size: 2.5em;
                     font-weight: bold;
                     color: white;
+                    margin-right: 20px;
                 }}
                 .title-logo-container img {{
                     width: 200px;
