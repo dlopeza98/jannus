@@ -9,6 +9,7 @@ __pycache__/
 # Ignore models folder
 /home/dalopeza/jannus/.streamlit/secrets.toml
 
+
 # Distribution / packaging
 .Python
 build/
