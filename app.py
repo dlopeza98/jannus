@@ -147,48 +147,12 @@ def login():
     try:
         with open(logo_url, "rb") as image_file:
             logo_base64 = base64.b64encode(image_file.read()).decode("utf-8")
-        # Responsive styling for the title and logo
         st.markdown(
             f"""
-            <style>
-                /* Responsive styling */
-                .title-logo-container {{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 700px;
-                    margin: auto;
-                    padding-top: 18px;
-                }}
-                
-                /* Adjust font and image size on smaller screens */
-                @media (max-width: 600px) {{
-                    .title-logo-container h1 {{
-                        font-size: 1.5em; /* Smaller font size for mobile */
-                        margin-right: 10px; /* Add spacing between title and logo */
-                    }}
-                    .title-logo-container img {{
-                        width: 120px; /* Reduce logo size on mobile */
-                    }}
-                }}
-
-                /* Default styling for larger screens */
-                .title-logo-container h1 {{
-                    margin: 0;
-                    font-size: 2.5em;
-                    font-weight: bold;
-                    color: white;
-                    margin-right: 20px; /* Space between title and logo */
-                }}
-                .title-logo-container img {{
-                    width: 200px;
-                }}
-            </style>
-
-            <div class="title-logo-container">
-                <h1>Login</h1>
+            <div style="display: flex; justify-content: space-between; align-items: center; max-width: 700px; margin: auto; padding-top: 18px;">
+                <h1 style="margin: 0; font-size: 2.2em; font-weight: bold; color: white;">Login</h1>
                 <a href="https://www.deltawits.com" target="_blank">
-                    <img src="data:image/png;base64,{logo_base64}" alt="Logo"/>
+                    <img src="data:image/png;base64,{logo_base64}" style="width:180px;"/>
                 </a>
             </div>
             """,
@@ -248,45 +212,10 @@ def main():
 
         st.markdown(
             f"""
-            <style>
-                /* Responsive styling to keep the title and logo on the same line */
-                .title-logo-container {{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    max-width: 700px;
-                    margin: auto;
-                    padding-top: 10px;
-                }}
-
-                /* Adjust font and image size on smaller screens */
-                @media (max-width: 600px) {{
-                    .title-logo-container h1 {{
-                        font-size: 1.5em;
-                        margin-right: 10px;
-                    }}
-                    .title-logo-container img {{
-                        width: 120px;
-                    }}
-                }}
-
-                /* Default styling for larger screens */
-                .title-logo-container h1 {{
-                    margin: 0;
-                    font-size: 2.5em;
-                    font-weight: bold;
-                    color: white;
-                    margin-right: 20px;
-                }}
-                .title-logo-container img {{
-                    width: 200px;
-                }}
-            </style>
-
-            <div class="title-logo-container">
-                <h1>Janus</h1>
+            <div style="display: flex; justify-content: space-between; align-items: center; max-width: 700px; margin: auto; padding-top: 10px;">
+                <h1 style="margin: 0; font-size: 2.2em; font-weight: bold; color: white;">Janus</h1>
                 <a href="https://www.deltawits.com" target="_blank">
-                    <img src="data:image/png;base64,{logo_base64}" alt="Logo"/>
+                    <img src="data:image/png;base64,{logo_base64}" style="width:180px;"/>
                 </a>
             </div>
             """,
